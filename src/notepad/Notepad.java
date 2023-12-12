@@ -193,6 +193,9 @@ public class Notepad extends JFrame implements ActionListener {
             area.replaceRange("", area.getSelectionStart(),area.getSelectionEnd());
         } else if (ae.getActionCommand().equals("Select All")){
             area.selectAll();
+        }else if (ae.getActionCommand().equals("About")){
+             new About().setVisible(true);
+        }
         
     }
     
